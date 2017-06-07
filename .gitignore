@@ -1,2 +1,2 @@
 *.exe
-/build/meter-http-ignore.rb
+/build/*ignore.rb
