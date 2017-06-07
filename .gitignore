@@ -1,8 +1,8 @@
 *.exe
-*ignore.rb
+*ignore.sh
 *.h
 *.txt
-/build/*ignore.rb
+/build/*ignore.sh
 /build/*.exe
 /build/*.txt
 /build/*.h
